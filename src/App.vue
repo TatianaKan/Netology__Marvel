@@ -4,7 +4,8 @@
 
     <div class="container">
       <h1 class="pt-3 pb-3">Персонажи Marvel</h1>
-      
+
+      <h4 v-if="!character.length && !loading">По вашему запросу ничего не найдено...</h4>      
 
       <app-modal :character="character[characterIndex]" />
 
